@@ -73,4 +73,4 @@ class TV:
         self.setVolumen(self.getVolumen() -1)
 
     def getEstado(self):
-        return self.estado
+        return self._estado
