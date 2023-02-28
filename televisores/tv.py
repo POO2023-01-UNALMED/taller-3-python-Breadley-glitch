@@ -29,7 +29,7 @@ class TV:
         return self._precio
 
     def setCanal(self, canal):
-        if (self._estado) and (canal >=1 and canal <= 121):
+        if (self._estado) and (1<= canal and canal <= 120):
             self._canal = canal
         else:
             pass
