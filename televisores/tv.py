@@ -1,15 +1,17 @@
 class TV:
-    _numTv=0
-    def__init__(self, marca, estado):
-        from televisores.control import control
+
+    _numTV=0
+
+    def __init__(self, marca, estado):
+        from televisores.control import Control
         from televisores.marca import Marca
         self._marca = marca
-        sel._estado = estado
+        self._estado = estado
         self._canal = 1
         self._volumen = 1
         self._precio = 500
         self._control = None
-        tv.setNumTV(TV.getNumTV()+1)
+        TV.setNumTV(TV.getNumTV() +1)
 
     def setMarca(self, marca):
         self._marca = marca
@@ -22,12 +24,12 @@ class TV:
         return self._control
 
     def setPrecio(self, precio):
-        self._precio = _precio
+        self._precio = precio
     def getPrecio(self):
         return self._precio
 
     def setCanal(self, canal):
-        if (self.estado) and (canal >=1 and canal <= 120)
+        if (self._estado) and (canal >=1 and canal <= 121):
             self._canal = canal
         else:
             pass
@@ -36,7 +38,7 @@ class TV:
         return self._canal
 
     def setVolumen(self, volumen):
-        if (self.estado) and (volumen >=0 and volumen <=7):
+        if (self._estado) and (volumen >=0 and volumen <=7):
             self._volumen = volumen
         else:
             pass
@@ -46,11 +48,11 @@ class TV:
 
     @classmethod
     def getNumTV(cls):
-        return cls.numTV
+        return cls._numTV
 
     @classmethod
     def setNumTV(cls, nuevoNumTV):
-        cls.numTV = nuevoNumTV
+        cls._numTV = nuevoNumTV
 
     def turnOn(self):
         self._estado = True

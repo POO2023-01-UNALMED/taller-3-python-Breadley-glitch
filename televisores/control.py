@@ -1,6 +1,6 @@
-class Conrol:
+class Control:
 
-    def __init__(self, televisor):
+    def __init__(self):
         from televisores.tv import TV
         self._tv = None
 
@@ -8,7 +8,7 @@ class Conrol:
         self._tv = televisor
         televisor.setControl(self)
 
-    def trunOn(self):
+    def turnOn(self):
         self._tv.turnOn()
 
     def turnOff(self):
@@ -33,4 +33,4 @@ class Conrol:
         return self._tv
 
     def setTv(self, televisor):
-        self.tv = televisor 
+        self.tv = televisor

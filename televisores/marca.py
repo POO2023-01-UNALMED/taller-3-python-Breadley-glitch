@@ -1,4 +1,5 @@
 class Marca:
+    
     def __init__(self,nombre):
         self._nombre = nombre
 
@@ -7,4 +8,3 @@ class Marca:
 
     def getNombre(self):
         return self._nombre
-        
